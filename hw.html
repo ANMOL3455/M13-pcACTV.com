@@ -1,4 +1,4 @@
- 
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,6 +15,9 @@
 			border: 2px solid black;
 			font-size: 20px;
 			font-weight: bold;
+			animation: appear  linear;
+     animation-timeline: view();
+     animation-range: entry 0 cover 40%;
 		}
 
 h1{
@@ -31,7 +34,21 @@ table,td,th,tr{
 td{
 	font-size: 20px;
 }
+ @keyframes appear{
+    from{
+      opacity: 0;
+      scale: 0.5;
+      transform: translateX(-100px);
+      clip-path: inset(100% 100% 0 0);
 
+    }
+    to{
+      opacity: 1;
+      scale: 1;
+      transform: translateX(0px);
+      clip-path: inset(0 0 0 0 );
+    }
+  }
 
 
 	</style>
@@ -167,7 +184,11 @@ AD-complex compounds---
 	SB-networking<br>
 	DA-programs from 41 to 51 in book
 </div>
-
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
 
